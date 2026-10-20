@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["2F2W9M34K4.com.bingeyourself.app"],
+        "components": [
+          {
+            "/": "/binge-yourself/oauth",
+            "comment": "Trakt sign-in callback"
+          },
+          {
+            "/": "/*",
+            "exclude": true,
+            "comment": "Leave the rest of this site in the browser"
+          }
+        ]
+      }
+    ]
+  }
+}
