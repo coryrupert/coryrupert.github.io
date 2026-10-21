@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Binge Yourself</title>
+  <script>
+    var target = "bingeyourself://oauth" + window.location.search + window.location.hash;
+    window.location.replace(target);
+  </script>
 </head>
 <body>
   <p>Returning to Binge Yourself.</p>
   <p><a id="open" href="bingeyourself://oauth">Open Binge Yourself</a></p>
   <script>
-    var target = "bingeyourself://oauth" + window.location.search + window.location.hash;
-    var link = document.getElementById("open");
-    if (link) link.href = target;
-    window.location.replace(target);
+    var open = document.getElementById("open");
+    if (open) open.href = "bingeyourself://oauth" + window.location.search + window.location.hash;
   </script>
 </body>
 </html>
