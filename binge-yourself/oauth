@@ -6,6 +6,13 @@
   <title>Binge Yourself</title>
 </head>
 <body>
-  <p>You can return to Binge Yourself.</p>
+  <p>Returning to Binge Yourself.</p>
+  <p><a id="open" href="bingeyourself://oauth">Open Binge Yourself</a></p>
+  <script>
+    var target = "bingeyourself://oauth" + window.location.search + window.location.hash;
+    var link = document.getElementById("open");
+    if (link) link.href = target;
+    window.location.replace(target);
+  </script>
 </body>
 </html>

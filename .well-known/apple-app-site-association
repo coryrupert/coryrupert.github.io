@@ -5,19 +5,12 @@
         "appIDs": ["2F2W9M34K4.app.getcheckyourself.binge"],
         "components": [
           {
-            "/": "/binge-yourself/oauth",
-            "comment": "Trakt sign-in callback"
-          },
-          {
             "/": "/*",
             "exclude": true,
-            "comment": "Leave the rest of this site in the browser"
+            "comment": "Sign-in stays in the browser until the app link opens"
           }
         ]
       }
     ]
-  },
-  "webcredentials": {
-    "apps": ["2F2W9M34K4.app.getcheckyourself.binge"]
   }
 }
